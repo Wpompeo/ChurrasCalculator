@@ -8,37 +8,55 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
-    <TextView
-        android:id="@+id/tv_title"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ChurrasCalculator"
-        android:textAlignment="center"
-        android:textSize="32dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="ChurrasCalculator"
+            android:textAlignment="center"
+            android:textColor="@color/Gold"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.08" />
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/tv_subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Organize seu churrasco sem erro"
-        android:textSize="16dp"
-        android:textStyle="italic"
+        android:textColor="@color/LimeGreen"
+        android:textSize="19dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.012" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_adultos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_marginTop="33dp"
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,8 +64,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_adultos"
+            android:maxLength="5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Número de adultos" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,8 +83,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_criancas"
+            android:maxLength="5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Número de crianças" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,8 +102,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_horas"
+            android:maxLength="5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:hint="Duração do churrasco (Em horas)" />
     </com.google.android.material.textfield.TextInputLayout>
 

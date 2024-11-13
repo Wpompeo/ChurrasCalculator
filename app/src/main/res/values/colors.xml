@@ -2,7 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="LimeGreen">#32CD32</color>
+    <color name="LimeGreen">#006400</color>
     <color name="BlueDodger">#1E90FF</color>
+    <color name="Red">#B22222</color>
+    <color name="Gold">#FFD700</color>
 
 </resources>
