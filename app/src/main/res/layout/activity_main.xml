@@ -65,10 +65,14 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_adultos"
             android:maxLength="5"
+            android:drawableStart="@drawable/peoplegroup"
+            android:background="@drawable/rounded_bg"
+            android:drawablePadding="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:hint="Número de adultos" />
+            android:hint="Número de adultos"
+            android:textColorHint="@color/LimeGreen"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -84,10 +88,14 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_criancas"
             android:maxLength="5"
+            android:drawableStart="@drawable/children"
+            android:background="@drawable/rounded_bg"
+            android:drawablePadding="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:hint="Número de crianças" />
+            android:hint="Número de crianças"
+            android:textColorHint="@color/LimeGreen"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -103,10 +111,14 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_horas"
             android:maxLength="5"
+            android:drawableStart="@drawable/hours"
+            android:background="@drawable/rounded_bg"
+            android:drawablePadding="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:hint="Duração do churrasco (Em horas)" />
+            android:hint="Duração do churrasco (Em horas)"
+            android:textColorHint="@color/LimeGreen"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -128,7 +140,7 @@
 
     <ImageView
         android:layout_width="300dp"
-        android:layout_height="280dp"
+        android:layout_height="250dp"
         android:src="@drawable/churras"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
