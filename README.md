@@ -10,7 +10,9 @@ Screenshots
 
 <img src="https://github.com/user-attachments/assets/733c9c9f-0cc0-4db2-b6d0-19f38eb18f13" width=200/>
 <img src="https://github.com/user-attachments/assets/49727f2a-1eb4-41b7-98d4-29f2440b707c" width=200/>
+<img src="https://github.com/user-attachments/assets/05bc28f9-6e34-4411-9f3d-2b0e7a4b5a26" width=200/>
 <img src="https://github.com/user-attachments/assets/9c089463-f957-4d6f-b885-57d3f8422ed2" width=200/>
+
 
 ## Tecnologias
 - Activity
