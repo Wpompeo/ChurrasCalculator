@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
                 val children = childrenStr.toFloat()
                 val hours = hoursStr.toFloat()
 
-
-
                 if (hours.toInt() == 1 || hours.toInt() == 2) {
                     val childrenMeat = children * 200 / 1000
                     val adultsMeat = adults * 400 / 1000
@@ -56,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                     val childrenMeat = children * 250 / 1000
                     val adultsMeat = adults * 500 / 1000
                     val meat = childrenMeat + adultsMeat
-                    val beerAdults = adults * ( 45 / 10 ) * hours
+                    val beerAdults = adults * (45 / 10) * hours
                     val refrigeratorChildren = (adults + children) * 600 / 1000
 
                     val intent = Intent(this, ResultCalculator::class.java)

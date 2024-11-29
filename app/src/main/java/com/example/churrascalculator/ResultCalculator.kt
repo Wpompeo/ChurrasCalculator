@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 
 const val KEY_RESULT_BEER = "ResultCalculator.KEY_BEER"
 const val KEY_RESULT_MEAT = "ResultCalculator.kEY_MEAT"
@@ -35,6 +36,14 @@ class ResultCalculator : AppCompatActivity() {
         btnRecall.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+
+        val btnFinish = findViewById<Button>(R.id.btn_finish)
+        btnFinish.setOnClickListener {
+            Snackbar.make(btnFinish, "Finalizando o aplicativo...", Snackbar.LENGTH_SHORT).show()
+            btnFinish.postDelayed({
+                finishAffinity()
+            }, 200)
         }
     }
 }
