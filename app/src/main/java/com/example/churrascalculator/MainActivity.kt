@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                     val childrenMeat = children * 200 / 1000
                     val adultsMeat = adults * 400 / 1000
                     val meat = childrenMeat + adultsMeat
-                    val beerAdults = adults * 4 * hours
+                    val beerAdults = adults * 4
                     val refrigeratorChildren = (adults + children) * 400 / 1000
 
                     val intent = Intent(this, ResultCalculator::class.java)
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                     val childrenMeat = children * 250 / 1000
                     val adultsMeat = adults * 500 / 1000
                     val meat = childrenMeat + adultsMeat
-                    val beerAdults = adults * (45 / 10) * hours
+                    val beerAdults = adults * (60 / 10)
                     val refrigeratorChildren = (adults + children) * 600 / 1000
 
                     val intent = Intent(this, ResultCalculator::class.java)

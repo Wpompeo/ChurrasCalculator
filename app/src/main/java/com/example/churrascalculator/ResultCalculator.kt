@@ -21,16 +21,18 @@ class ResultCalculator : AppCompatActivity() {
         val resultDrinks = intent.getFloatExtra(KEY_RESULT_DRINKS, 0f)
 
         val meat = findViewById<TextView>(R.id.tv_carne)
-        val meatFormat = String.format("%.2f", resultMeat)
-        "${meatFormat}(kg)".also { meat.text = it }
+        val meatFormat = "%.2f Kg".format(resultMeat)
+        meat.text = meatFormat
+
 
         val beer = findViewById<TextView>(R.id.tv_cerveja)
-        val beerFormat = String.format("%.2f", resultBeer)
-        "${beerFormat}(Latas)".also { beer.text = it }
+        val beerFormat = "%.2f Latas".format(resultBeer)
+        beer.text = beerFormat
+
 
         val drink = findViewById<TextView>(R.id.tv_refrigerante)
-        val drinkFormat = String.format("%.2f", resultDrinks)
-        "${drinkFormat}(Litros)".also { drink.text = it }
+        val drinkFormat = "%.2f Litros".format(resultDrinks)
+        drink.text = drinkFormat
 
         val btnRecall = findViewById<Button>(R.id.btn_recalc)
         btnRecall.setOnClickListener {
